@@ -1,19 +1,16 @@
 # 🎯 Number Guessing Game
+Put your psychic powers to the test!  
+The computer secretly picks a number between 1 and 100 — your mission?  
+Guess it within 10 tries. You'll get clues after each guess:
 
-Welcome to the **Number Guessing Game** a fun console-based game where your brain meets randomness!
+- **"Your guess is highly lower"** if you're way off (more than 10 away)
+- **"Your guess is a bit lower"** if you're close-ish (within 10)
+- Same logic for higher guesses!
 
-## 💡 What is this?
+Nail the number? You’ll be showered in dramatic congratulations.  
+Fail? The game mockingly reveals the number and your defeat.
 
-This is a Python-based guessing game where the computer picks a number between **1 and 100**, and **you try to guess it!**  
-You'll get helpful hints like:
-
-- "bit higher" or "bit lower" if you're close (within 5),
-- "highly higher" or "highly lower" if you're far off.
-
-The game comes in two difficulty levels:
-- **Easy** – 10 guesses  
-- **Hard** – 5 guesses
-
+Simple. Addictive. Weirdly intense.
 Choose wisely. 😄
 
 ## 🛠️ How to Run
