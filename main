@@ -1,0 +1,39 @@
+import random
+
+print("🎯 Welcome to the Number Guessing Game!")
+print("I'm thinking of a number between 1 and 100.")
+mode = input("Choose your difficulty level. Type 'easy' or 'hard': ").lower()
+
+num = random.randint(1, 100)
+
+if mode == "easy":
+    attempt = 10
+elif mode == "hard":
+    attempt = 5
+else:
+    print("😵 Oops! Invalid difficulty mode. Please restart and type 'easy' or 'hard'.")
+    attempt = 0
+
+for i in range(attempt):
+    print(f"\n🕵️ You have {attempt - i} attempts remaining.")
+    guess = int(input("🤔 Guess a number: "))
+
+    if guess == num:
+        print("🎉 Your Guess was correct! Congrats!!! YAYYYYYYYYYYYY!!! 🎉")
+        break
+
+    diff = abs(num - guess)
+
+    if guess < num:
+        if diff <= 5:
+            print("📉 Your guess is a bit lower... you're *really* close!")
+        else:
+            print("📉 Your guess is highly lower than the number. Warm up those brain cells!")
+    else:
+        if diff <= 5:
+            print("📈 Your guess is a bit higher... almost there!")
+        else:
+            print("📈 Your guess is highly higher than the number. Chill! Come back down!")
+
+    if i == attempt - 1:
+        print(f"\n💥 Your attempts are over! Better luck next time.\n🔍 The correct number was: {num}")
