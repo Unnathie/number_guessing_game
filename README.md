@@ -1,6 +1,6 @@
 # 🎯 Number Guessing Game
 Put your psychic powers to the test!  
-The computer secretly picks a number between 1 and 100 — your mission?  
+The computer secretly picks a number between 1 and 100 your mission?  
 Guess it within 10 tries. You'll get clues after each guess:
 
 - **"Your guess is highly lower"** if you're way off (more than 10 away)
